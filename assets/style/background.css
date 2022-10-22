@@ -1,0 +1,208 @@
+body {
+    background-color: #000;
+  }
+  @keyframes fade_text {
+      0%  { opacity:1;}
+      10%  { opacity:.8; }
+      25%  { opacity: .5; }
+      50%  { opacity:.3; }
+      65%  { opacity:.5; }
+      90%  { opacity: .8; }
+      100% { opacity:1; }
+    }
+    @-o-keyframes fade_text{
+        0%  { opacity:1;}
+      10%  { opacity:.8; }
+      25%  { opacity: .5; }
+      50%  { opacity:.3; }
+      65%  { opacity:.5; }
+      90%  { opacity: .8; }
+      100% { opacity:1; }
+    }
+    @-moz-keyframes fade_text{
+       0%  { opacity:1;}
+      10%  { opacity:.8; }
+      25%  { opacity: .5; }
+      50%  { opacity:.3; }
+      65%  { opacity:.5; }
+      90%  { opacity: .8; }
+      100% { opacity:1; }
+    }
+    @-webkit-keyframes fade_text{
+       0%  { opacity:1;}
+      10%  { opacity:.8; }
+      25%  { opacity: .5; }
+      50%  { opacity:.3; }
+      65%  { opacity:.5; }
+      90%  { opacity: .8; }
+      100% { opacity:1; }
+    }
+    .text_fade{
+       -webkit-animation: fade_text 8s infinite ease-in;
+       -moz-animation: fade_text 8s infinite ease-in;
+       -o-animation: fade_text 8s infinite ease-in;
+        animation: fade_text 8s infinite ease-in;
+    }
+    .back {
+      position: absolute;
+     width: .001vmin;
+     height: .001vmin;
+      border-radius: 50%;
+      opacity: .25;
+    }
+    
+    .back:nth-child(2) {
+      -webkit-box-shadow: 0 0 45vmax 45vmax #ff00ff;
+      box-shadow: 0 0 45vmax 45vmax #ff00ff;
+      -webkit-animation: hue 10s 0s linear infinite, move1 19s 0s linear infinite;
+      animation: hue 10s 0s linear infinite, move1 19s 0s linear infinite;
+    }
+    
+    .back:nth-child(3) {
+      -webkit-box-shadow: 0 0 45vmax 45vmax #ffffff;
+      box-shadow: 0 0 45vmax 45vmax #ffffff;
+      -webkit-animation: hue 15s 0s linear infinite, move2 25s 0s linear infinite;
+      animation: hue 15s 0s linear infinite, move2 25s 0s linear infinite;
+    }
+    
+    .back:nth-child(4) {
+      -webkit-box-shadow: 0 0 45vmax 45vmax #00ffff;
+      box-shadow: 0 0 45vmax 45vmax #00ffff;
+      -webkit-animation: hue 20s 0s linear infinite, move3 15s 0s linear infinite;
+      animation: hue 20s 0s linear infinite, move3 15s 0s linear infinite;
+      opacity: .2;
+    }
+    @-webkit-keyframes 
+    hue { 0% {
+     -webkit-filter: hue-rotate(0deg);
+     filter: hue-rotate(0deg);
+    }
+     100% {
+     -webkit-filter: hue-rotate(360deg);
+     filter: hue-rotate(360deg);
+    }
+    }
+    @keyframes 
+    hue { 0% {
+     -webkit-filter: hue-rotate(0deg);
+     filter: hue-rotate(0deg);
+    }
+     100% {
+     -webkit-filter: hue-rotate(360deg);
+     filter: hue-rotate(360deg);
+    }
+    }
+    @-webkit-keyframes 
+    move1 { 0% {
+     top: 0vh;
+     left: 50vw;
+    }
+     25% {
+     left: 0vw;
+    }
+     50% {
+     top: 100vh;
+    }
+     75% {
+     left: 100vw;
+    }
+     100% {
+     top: 0vh;
+     left: 50vw;
+    }
+    }
+    @keyframes 
+    move1 { 0% {
+     top: 0vh;
+     left: 50vw;
+    }
+     25% {
+     left: 0vw;
+    }
+     50% {
+     top: 100vh;
+    }
+     75% {
+     left: 100vw;
+    }
+     100% {
+     top: 0vh;
+     left: 50vw;
+    }
+    }
+    @-webkit-keyframes 
+    move2 { 0% {
+     top: 50vh;
+     left: 100vw;
+    }
+     25% {
+     top: 100vh;
+    }
+     50% {
+     left: 0vw;
+    }
+     75% {
+     top: 0vh;
+    }
+     100% {
+     top: 50vh;
+     left: 100vw;
+    }
+    }
+    @keyframes 
+    move2 { 0% {
+     top: 50vh;
+     left: 100vw;
+    }
+     25% {
+     top: 100vh;
+    }
+     50% {
+     left: 0vw;
+    }
+     75% {
+     top: 0vh;
+    }
+     100% {
+     top: 50vh;
+     left: 100vw;
+    }
+    }
+    @-webkit-keyframes 
+    move3 { 0% {
+     top: 100vh;
+     left: 50vw;
+    }
+     25% {
+     left: 100vw;
+    }
+     50% {
+     top: 0vh;
+    }
+     75% {
+     left: 0vw;
+    }
+     100% {
+     top: 100vh;
+     left: 50vw;
+    }
+    }
+    @keyframes 
+    move3 { 0% {
+     top: 100vh;
+     left: 50vw;
+    }
+     25% {
+     left: 100vw;
+    }
+     50% {
+     top: 0vh;
+    }
+     75% {
+     left: 0vw;
+    }
+     100% {
+     top: 100vh;
+     left: 50vw;
+    }
+    }
